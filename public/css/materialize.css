@@ -3542,6 +3542,8 @@ table span.badge {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
+  vertical-align: middle;
+  line-height: 1.2;
 }
 
 .container {
