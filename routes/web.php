@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+//Route::get('/', function () {
+//    return view('index');
+//});
+
+Route::get('/', 'SiteController@index');
+Route::post('/contact', 'SiteController@store');

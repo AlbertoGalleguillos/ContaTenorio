@@ -23,6 +23,7 @@
 <div class="container">
     <div class="row">
         <div class="col s12 m6">
+            <div class="hide-on-small-only"><br><br><br></div>
             <div class="card">
                 <div class="card-content">
                     <span class="card-title center">Pyme</span>
@@ -32,7 +33,7 @@
                         <li><i class="material-icons">face</i> Asesorías Personalizadas<li>
                         <li><i class="material-icons">library_books</i> Libros Oficiales<li>
                         <li><i class="material-icons">subject</i> Declaraciones Mensuales<li>
-                        <h4 class="center">Pago Único : 3 UF</h4>
+                        <h4 class="center">Valor: 3 UF al mes</h4>
                     <ul>
                 </div>
                 <div class="card-action center">
@@ -55,7 +56,7 @@
                         <li><i class="material-icons">trending_up</i> Planificación y Proyecciones Tributarias<li>
                         <li><i class="material-icons">insert_chart</i> Estado de Resultado<li>
                         <li><i class="material-icons">payment</i> Remuneraciones<li>
-                        <h4 class="center">Pago Único: 6 UF</h4>
+                        <h4 class="center">Valor: 6 UF al mes</h4>
                     <ul>
                 </div>
                 <div class="card-action center">
@@ -90,7 +91,7 @@
 				<textarea name="message" id="message" class="materialize-textarea" required></textarea>
 				<label for="message">Cuéntanos lo que necesitas</label>
 			</div>
-			<button class="btn waves-effect waves-light light-blue" type="submit">Enviar
+			<button class="btn waves-effect waves-light blue" type="submit">Enviar
 				<i class="material-icons right">send</i>
 			</button>
 		</div>
@@ -100,19 +101,18 @@
 </main>
     <footer class="page-footer deep-purple">
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                <h5 class="white-text">Contabilidad Tenorio</h5>
-                <p class="grey-text text-lighten-4">Contabilidad para todos !</p>
-                </div>
-            </div>
+            <h5 class="white-text">Contabilidad Tenorio</h5>
+            <p class="grey-text text-lighten-4">Contabilidad para todos !</p>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Desarrollador por <a class="grey-text text-lighten-4" href="#!">Segasi</a>
+                Desarrollado por <a class="grey-text text-lighten-4" href="https://segasi.cl" target="_blank">Segasi</a>
             </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    @if (session()->has('message')) 
+        <script>M.toast({html:'{{ session()->get('message') }}'});</script>
+    @endif
 </body>
 </html>
