@@ -37,7 +37,7 @@
                     <ul>
                 </div>
                 <div class="card-action center">
-                    <a class="blue-text" href="#">Contratar</a>
+                    <a class="blue-text" href="#form">Contratar</a>
                 </div>
             </div>
         </div>
@@ -60,14 +60,14 @@
                     <ul>
                 </div>
                 <div class="card-action center">
-                    <a class="blue-text" href="#">Contratar</a>
+                    <a class="blue-text" href="#form">Contratar</a>
                 </div>
             </div>
         </div>
     </div>
 
     <hr>
-	<form class="section center" method="POST" action="/contact">
+	<form class="section center" method="POST" action="/contact" id="form">
         {{ csrf_field() }}
 		<h4>Solicita una evaluación gratuita</h4>
 		<div class="row">
@@ -107,6 +107,7 @@
         <div class="footer-copyright">
             <div class="container">
                 Desarrollado por <a class="grey-text text-lighten-4" href="https://segasi.cl" target="_blank">Segasi</a>
+                <span class="right">+569 4222 8186</span>
             </div>
         </div>
     </footer>
