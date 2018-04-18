@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/css/materialize.css">    
+    <link rel="stylesheet" href="/css/materialize.css">
     <title>Contabilidad Tenorio</title>
 </head>
 <body>
@@ -19,9 +19,18 @@
 </nav>
 
 <main>
-<br>
+<div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="container center">
+        <h1 class="header white-text">Contabilidad Tenorio</h1>
+        <!--<div class="row">
+            <h3 class="header col s12 light white-text">Una compañía dedicada ...</h3>
+        </div>-->
+    </div>
+    <div class="parallax"><img src="write.jpg" alt="Unsplashed background img 1"></div>
+</div>
 <div class="container">
     <div class="row">
+        <h1 class="center">Planes</h1>
         <div class="col s12 m6">
             <div class="hide-on-small-only"><br><br><br></div>
             <div class="card">
@@ -106,13 +115,14 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Desarrollado por <a class="grey-text text-lighten-4" href="https://segasi.cl" target="_blank">Segasi</a>
+                Desarrollado por <a class="blue-text text-lighten-4" href="https://segasi.cl" target="_blank">Segasi</a>
                 <span class="right">+569 4222 8186</span>
             </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    @if (session()->has('message')) 
+    <script src="/js/init.js"></script>
+    @if (session()->has('message'))
         <script>M.toast({html:'{{ session()->get('message') }}'});</script>
     @endif
 </body>
