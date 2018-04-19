@@ -21,7 +21,7 @@
 <main>
 <div id="index-banner" class="parallax-container valign-wrapper">
     <div class="container center">
-        <h1 class="header white-text">Contabilidad Tenorio</h1>
+        <h2 class="header white-text">Contabilidad Tenorio</h2>
         <!--<div class="row">
             <h3 class="header col s12 light white-text">Una compañía dedicada ...</h3>
         </div>-->
